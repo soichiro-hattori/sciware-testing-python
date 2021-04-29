@@ -8,11 +8,13 @@ def test_sum_numbers_123():
 
 def test_sum_numbers_yours():
     # write another test of the sum_numbers function
-    pass
+    s = sum_numbers([2,2,5,3])
+    assert s == 12
 
 def test_sum_numbers_empty():
     # what's the sum of an empty list?
-    pass
+    s = sum_numbers([])
+    assert s == 0
 
 #@pytest.mark.xfail(strict=True, raises=TypeError)
 def test_sum_strings():
